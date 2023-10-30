@@ -1,0 +1,449 @@
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  position: fixed;
+  width: 100%;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #E9C46A;
+  color: black;
+}
+
+.header a.active {
+  background-color: #264653;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+.home {
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+  background-image: url('gif.webp');
+  background-size: cover;
+  background-color: #2a9d8f;
+  background-blend-mode: lighten;
+}
+
+.about {
+  background-color: #2A9D8F;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+#contact{
+  background-color: #396678;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+#donate{
+  background-color: #E76F51;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+
+.home h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.home p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #E9C46A;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2a9d8f;
+  color: #fff;
+}
+
+#counter1, #counter2, #counter3{
+    font-size:  50px;
+}
+
+.column {
+  margin: 5px;
+  float: left;
+  width: 24%;
+  padding: 15px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+#one{
+  background-color: #264653;
+}
+#one:hover{
+  background-color: #396678;
+}
+
+#two{
+  background-color: #2A9D8F;
+}
+#two:hover{
+  background-color: #36beae;
+}
+
+#three{
+  background-color: #fad575;
+}
+#three:hover{
+  background-color: #ead191;
+}
+
+#four{
+  background-color: #E76F51;
+}
+#four:hover{
+  background-color: #f79076;
+}
+
+.column p{
+    font-size: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* The Timeline */
+
+#achieve{
+    background-color: #F4A261;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    margin-top: -100px;
+}
+
+#donate .notice{
+    background-image: linear-gradient(to top left, #EDF6F9, #e9b86a);
+    animation-name: fade_in;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    height: 400px;
+    width: 600px;
+    margin-top: 40px;
+    margin-left: 100px; 
+    font-family: 'Courier New', Courier, monospace;
+    color: #264653;
+    box-shadow: #264653 -10px -10px 20px;
+}
+@keyframes fade_in {
+    0%{
+        opacity: 0;
+        transform: translateY(-40px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+
+#form1{
+  padding: 20px;
+  background-color: #ead191;
+  border-radius: 5px;
+  width: 40%;
+  height: 100%;
+  float: right;
+  margin: 0px 20px;
+  margin-top: -400px;
+}
+
+#form2{
+  padding: 20px;
+  background-color: #2A9D8F;
+  border-radius: 5px;
+  width: 40%;
+  height: 100%;
+  float: left;
+  margin: 0px 20px;
+  margin-top: -100px;
+  display: inline;
+}
+
+input, #input{
+  width: 70%;
+  height: 100%;
+  margin: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn2{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #E76F51;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  width: 30%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn2:hover{
+  background-color: #E9C46A;
+  color: black;
+}
+
+.btn3{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #396678;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  width: 30%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn3:hover{
+  background-color: #ead191;
+  color: black;
+}
+
+.title{
+  font-size: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+label{
+  margin: 10px 20px;
+}
+
+.input-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+/*timeline*/
+
+
+.event{
+  background-color: white;
+  color: #264653;
+  width: 20%;
+  height: 100%;
+  padding: 20px;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 5px;
+  
+}
+
+.event:hover{
+  background-color: #2A9D8F;
+  color:#EDF6F9;
+}
+
+#abouttext{
+  color: #f1f1f1;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 40px;
+  text-transform:unset;
+
+}
+
+.msg{
+  background-color: #264653;
+  width: 80%;
+  border-radius: 5px;
+  height: auto;
+  padding: 15px;
+  align-items: center;
+  animation-name: fade_in;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  box-shadow: #ead191 10px 10px 20px;
+}
+
+footer {
+  background-color: #2c2f30;
+  padding: 10px 0;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#contactREAD{
+  display: inline-flex;
+  background: #FEC601;
+  width: 100%;
+  height: 200px;
+}
+.icons{
+  height: 150px;
+  margin: 25px;
+  margin-left: 100px;
+  border: #73BFB8 3px solid;
+  padding: 25px;
+  border-radius: 30px;
+}
+.icons:hover{
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+@keyframes rotate{
+  50%{
+    transform: rotate(360deg);
+  }
+}
+#information{
+  background-color: #73BFB8;
+  padding-top: 50px;
+  padding-left: 50px;
+  color: #264653;
+}
+.hr{
+  color: white;
+}
+#images{
+  background-color: #E9C46A;
+  display: inline-flex;
+  width: 100%;
+  padding-bottom: 25px;
+  padding-top: 70px;
+}
+.imgs2{
+  background-size: cover;
+  margin-left: 30px;
+  box-shadow: grey -10px -10px 10px;
+  transform: translateX(-5px);
+  transform: translateY(-5px);
+}
+.imgs2:hover{
+  box-shadow: grey 10px 10px 10px;
+  transform: translateX(0px);
+  transform: translateY(0px);
+}
+.imgs{
+  width: 24%;
+}
+.spacing{
+  margin-top: 150px;
+}
+.imgsCaption{
+  text-align: center;
+  margin-top: 50px;
+  color: #2a9d8f;
+  background-color: white;
+}
+#india, #nepal, #bhutan{
+  margin-left: 50px;
+}
+.countryImg{
+  border: white ridge 5px;
+  height: 250px;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-top: 15px;
+  box-shadow: #264653 10px 10px 10px;
+}
+.countryCaption{
+  color: #EA7317;
+  font-weight: 500;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 25px;
+}
+#animationDiv{
+  animation-name: side;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
+  display: inline-flex;
+  margin-top: 30px;
+}
+@keyframes side {
+  from{
+      opacity: 0;
+      transform: translateX(-100%);
+  }to{
+      opacity: 1;
+      transform: translateX(0%);
+  }
+}
+.countryImgCaption{
+  color: #FFCA3A;
+  font-weight: bold;
+}
+.event img{
+  box-shadow: 5px -5px 10px #73BFB8;
+}
+.event img:hover{
+  height: 115px;
+}
+#achieve{
+  background-image: url('achieve.png');
+}
